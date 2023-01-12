@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text1">
+    
+    <button onclick="hello()">Click Here</button>
+    
+
+    <script>
+        function hello(){
+            var name=document.getElementById("text1").value
+           console.log(name[0]);
+         var temp=document.createElement("p")
+            var text=document.createTextNode(name)
+            temp.appendChild(text)
+            document.body.appendChild(temp)
+        }
+
+        
+    </script>
+</body>
+</html>
